@@ -11,8 +11,8 @@ services:
       vulhubnet:
         ipv4_address: 172.20.0.100
     volumes: 
-      - ./python:/python-code
-      - ./golang:/go-code
+      - ./code-python:/code-python
+      - ./code-golang:/code-golang
 
 
 networks:
