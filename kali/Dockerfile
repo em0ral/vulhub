@@ -7,7 +7,8 @@ ENV TERM xterm-256color
 RUN rm -fR /var/lib/apt/ && \
     apt-get clean && \
     apt-get update -y && \
-    apt-get install -y software-properties-common kali-linux-headless --fix-missing
+    apt-get install -y software-properties-common kali-linux-headless --fix-missing &&\
+    apt-get install -y iputils-ping
 
 # Update DB and clean'up!
 RUN updatedb && \
